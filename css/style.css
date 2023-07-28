@@ -1,0 +1,88 @@
+:root
+{
+    --maincolor:#24353f;
+    --secondcolor: #17A2B8;
+    --thridcolor: #17A2B8;
+    --mainfont: 'Titillium Web', sans-serif;
+}
+
+body
+{
+    background-color: var(--maincolor);
+    font-family: var(--mainfont);
+}
+
+.item
+{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+h1
+{
+    color: var(--secondcolor);
+}
+
+.mybtn
+{
+    color: var(--secondcolor);
+    border: 1px solid var(--secondcolor);
+}
+.mybtn:hover
+{
+    color: #fff;
+    background-color: var(--thridcolor);
+}
+
+.form-control
+{
+    background-color: var(--maincolor);
+    border: 1px solid var(#fff) !important;
+    color: #fff !important;
+}
+
+.form-control:focus
+{
+    background-color: var(--maincolor);
+    border: 1px solid var(#fff) !important;
+    color: #fff !important;
+}
+
+::placeholder
+{
+    color: #fff !important;
+}
+
+.sign
+{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.sign::before
+{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    top: 90%;
+    left: 9%;
+    opacity: 0;
+}
+
+.sign:hover::before
+{
+    opacity: 1;
+}
+
+.navbar
+{
+    background-color: var(--maincolor) !important;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.pagesign, .home
+{
+    background-color: var(--maincolor);
+}

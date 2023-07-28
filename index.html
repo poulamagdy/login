@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="pagelogin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto item my-5">
+                        <div class="text-center p-5">
+                            <h1>Smart Login System</h1>
+                            <input type="email" name="uemail" id="email" placeholder="Enter your email" class="form-control py-2 my-3 w-100">
+                            <input type="password" name="upassword" id="password" placeholder="Enter your password" class="form-control py-2 w-100">
+                            <p id="lrequired" class="d-none mt-2 text-danger">All inputs is required</p>
+                            <p id="incorrect" class="d-none mt-2 text-danger">incorrect email or password</p>
+                            <button class="btn my-3 w-100 mybtn login">Login</button>
+                            <p class="text-white">Don’t have an account?<a href="#pagesign" class="sign"> Sign Up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="pagesign d-none position-fixed top-0 bottom-0 start-0 end-0" id="pagesign">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto item my-5">
+                        <div class="text-center p-5">
+                            <h1>Smart Login System</h1>
+                            <input type="text" name="uname" id="nnane" placeholder="Enter your name" oninput="validationname()" class="form-control py-2 my-3 w-100 ">
+                            <input type="email" name="uemail" id="nemail" placeholder="Enter your email" oninput="validationemail(), cheackemail()" class="form-control py-2 my-3 w-100">
+                            <input type="password" name="upassword" id="npassword" placeholder="Enter your password" oninput="validationpassword()" class="form-control py-2 w-100">
+                            <p id="myexist" class="d-none mt-2 text-danger">email already exists</p>
+                            <p id="required" class="d-none mt-2 text-danger">All inputs is required</p>
+                            <button class="btn my-3 w-100 mybtn signup">Sign Up</button>
+                            <p class="text-white">You have an account?<a href="" class="sign"> Signin</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home d-none position-fixed top-0 bottom-0 start-0 end-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li>
+                            <button class="btn text-white mylogout border border-1 border-warning btn-outline-warning">Logout</button>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div id="welcome" class="row">
+                </div>
+            </div>
+        </section>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
